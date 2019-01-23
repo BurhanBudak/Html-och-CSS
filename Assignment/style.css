@@ -1,0 +1,78 @@
+body{
+    background-image: url(https://picsum.photos/1750/1000/?random)
+}
+.main{
+    font-family: 'Roboto', sans-serif;
+    background-color:rgba(181, 192, 186, 0.658);
+    width: 960px;
+    align-content: center;
+    margin: auto;
+    text-align: center;
+    border: 5px blue solid;
+    border-radius:10%;
+}
+h1{
+    font-size: 2em;
+    color: blue;
+    font-family: 'Bellefair', serif;
+}
+div{
+    text-align: center;
+}
+div a{
+    text-decoration: none;
+
+}
+div a:hover{
+    color: purple;
+}
+p{
+    color: red;
+    font-size: 0.80em
+}
+ul#pageindex a:link{
+    color: whitesmoke;
+}
+ul#pageindex a:visited{
+    color: yellow;
+}
+ul#pageindex a:hover{
+    color: purple;
+    background-color: steelblue;
+}
+ul#pageindex a:active{
+    color: black;
+}
+ul#pageindex{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+ul#pageindex a{
+    background-color: grey;
+    display:block;
+    text-decoration: none;
+    padding: 2px;
+    margin: 3px;
+    text-align: center;
+}
+ul#pageindex li{
+    display: inline-block;
+}
+table{
+    border: 2px tomato solid;
+    margin: auto;
+}
+table td{
+    border: 2px tomato solid;
+    color: red;
+    margin: auto;
+}
+table th{
+    background-color: blue;
+    color: wheat;
+    padding: 1px;
+}
+.myinput{
+    width: 255px;
+}

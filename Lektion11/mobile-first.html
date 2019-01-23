@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mobile first</title>
+
+    <style>
+        /*General rules*/
+        *{box-sizing: border-box;}
+
+        body{font-size: 2em;}
+
+        #title, #stats, #board, #score, #controls{
+        border: 1px solid black;
+        border-radius: 20px;
+        padding: 20px;
+        margin-bottom: 10px;}
+        /*Mobile*/
+        #container{
+                width: 100%;
+                margin-right: auto;
+                margin-left: auto;
+        }
+        /*Desktop*/
+
+        /*Media Queries (MQ)*/
+        @media(min-width:800px){
+            body{
+            background-color: pink;
+            }
+            #container{
+            width: 800px; /*Om den är breddare än 800px och högre än 370px så ska dessa ccs regler funka*/
+            height: 370px;
+            margin: 0 auto;
+        }
+        .clearfix{
+        clear: both;
+        }
+        #board{
+        height: 290px;
+        margin-bottom: 10px;
+        }
+        #title{
+        height: 100px;
+        margin-bottom:10px;
+        }
+    #stats{
+    height: 190px;
+    margin-bottom: 10px;
+    }
+    .left {
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+    }
+    .right {
+    float: right;
+    width: 600px;
+    }
+}
+    
+    </style>
+</head>
+<body>
+    <div id="container">
+            <!--Rad 1 -->
+            <div id="title" class="left">Game</div>
+            <div id="board" class="right">Board</div>
+            <div id="stats" class="left">Stats</div>
+            
+            <!--Viktigt att rensa för floatmodellen-->
+            <div class="clearfix"></div>
+        
+            <!--Rad 2-->
+            <div id="score" class="left">Score</div>
+            <div id="controls" class="right">Controls</div>
+    </div>
+</body>
+</html>

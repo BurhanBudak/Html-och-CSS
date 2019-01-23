@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <style></style>
+    <title>Övning 1</title>
+</head>
+<body>
+    <form action="backend.php" method="POST">
+    <table border="1">
+        <tr>
+            <th>Name</th>    <th>Value</th>
+        </tr>
+        <tr>
+            <td>Name:</td>
+            <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+            <td>Sex</td>
+            <td><input type="radio" name="gender" value="m" id="male">
+                <label for="male">Male</label>
+                <input type="radio" name="gender" value="f" id="female">
+                <label for="female">Female</label>
+            </td>
+        </tr>
+        <tr>
+            <td>Eye color</td>
+            <td>
+                <select name="eye">
+                <option value="blue">Blue</option>
+                <option value="hazel">Hazel</option>
+                <option value="green">Green</option>
+                <option value="black">Black</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Check all that apply</td>
+            <td>
+                <input type="checkbox" name="service" value="height"> 6 feet tall
+                <input type="checkbox" name="service" value="weight"> Over 200 pounds
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <p>Decribe your athletic ability:</p>
+                <textarea name="describe" id="" cols="35" rows="5"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button type="submit">Submit</button>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

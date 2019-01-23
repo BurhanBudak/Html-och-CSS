@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="sv-SE">
+<head>
+    <meta charset="UTF-8">
+    <title>Listor</title>
+</head>
+<body>
+    <h1>Listor</h1>
+    <h2>Punktlistor (Unordered list)</h2>
+    <ul>
+        <li>Ost</li>
+        <li>Mjölk
+        <li>Bröd</li>
+        <li>Ägg
+    </ul>
+
+    <h2>Numerade listor</h2>
+    <ol>
+        <li>Lär dig HTML</li>
+        <li>Lär dig CSS</li>
+        <li>Lär dig JavaScript</li>
+    </ol>
+    <ol start="10">
+        <li>Lär dig databaser</li>
+        <li>Lär dig Java</li>
+    </ol>
+
+    <h3>Ändra typ</h3>
+    <ol type='1'>
+            <li>Lär dig HTML</li>
+            <li>Lär dig CSS</li>
+            <li>Lär dig JavaScript</li>
+    </ol>
+    <ol type="A">
+            <li>Lär dig HTML</li>
+            <li>Lär dig CSS</li>
+            <li>Lär dig JavaScript</li>
+    </ol>
+    <ol type="I">
+            <li>Lär dig HTML</li>
+            <li>Lär dig CSS</li>
+            <li>Lär dig JavaScript</li>
+    </ol>
+    <!--OBS! Type ej längre bruklig, föråldrad för HTML4-->
+    <!--ul type = "square">
+            <li>Ost</li>
+            <li>Mjölk
+            <li>Bröd</li>
+            <li>Ägg
+        </ul-->
+    <h3>Attributen reversed</h3>
+    <ol reversed="reversed">
+            <li>Lär dig HTML</li>
+            <li>Lär dig CSS</li>
+            <li>Lär dig JavaScript</li>
+    </ol>
+<!--
+    Differnece between HTML anf XHTML
+    In XHTML, attribute minimization is forbidden, and the 
+    reversed attribute must be defined as 
+    <ol reversed="reversed">. 
+    Källa: https://www.w3schools.com/tags/att_ol_reversed.asp
+-->
+    <h3>Övning</h3>
+    <blockquote>
+        <ol type="I" start="2018" >
+            <li>2018</li>
+        </ol>
+    </blockquote>
+
+    <h2>Definitionslistor (DL)</h2>
+    <dl>
+        <dt>Coffe</dt>
+        <dd>Black hot drink</dd>
+        <dt>Milk</dt>
+        <dd>White cold drink</dd>
+    </dl>
+
+    <h2>Nästlade listor</h2>
+
+    <ul>
+        <li>Coffee
+            <ul>
+                <li>Java</li>
+                <li>Gesisha</li>
+                <li>Blue harvest</li>
+            </ul>
+        </li>
+        <li>Tea
+            <ul>
+                <li>Black tea</li>
+                <li>Green tea</li>
+            </ul>
+        </li>
+        <li>Milk</li>
+    </ul>
+</body>
+</html>

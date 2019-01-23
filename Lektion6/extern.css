@@ -1,0 +1,18 @@
+h1,h2,h3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: red;
+}
+.loremgul{
+    background-color: yellow;
+    border: 3px solid yellowgreen;
+    width: 200px;
+    min-height: 200px;
+    height: auto;
+    margin: 10px;
+    padding:10px;
+    display: block;
+}
+p{
+    width: 200px;
+    height: 200px;
+}

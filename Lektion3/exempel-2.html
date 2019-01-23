@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabeller</title>
+    <style>
+    #heading{
+        background-color: aquamarine
+    }
+    </style>
+</head>
+<body>
+    <h1>Tabeller</h1>
+
+    <table border='1'> <!--border är obselete-->
+        <tr> <th>Name</th> <th>E-post</th> </tr>
+        <tr> <td>Burhan</td> <td>bb(at)blablaemail.com</td> </tr>
+        <tr> <td>Yunus</td> <td>yb(at)blablaemail.com</td> </tr>
+    </table>
+
+    <h2>Bilder i en HTML tabell</h2>
+
+    <table>
+        <tr>
+            <tr>
+                    <img src="https://picsum.photos/200/300/?blur" alt="Blured">
+            </tr>
+        </tr>
+        <tr>
+                <tr><img src="https://picsum.photos/g/200/300" alt="Dummy Images"></tr>
+        </tr>
+    </table>
+
+    <h3>Övning</h3>
+    <table border="5" width='500'>
+        <tr>
+            <th colspan="2">Schema</th>
+        </tr>
+        <tr id= 'heading'>
+            <th>Dag</th> <th>Aktivitet</th>
+        </tr>
+        <tr>
+            <th>Måndag</th> <th></th>
+        </tr>
+        <tr>
+            <th>Tisdag</th> <th>Matte</th>
+        </tr>
+        <tr>
+            <th>Onsdag</th> <th>Köra bil</th>
+        </tr>
+        <tr>
+            <th>Torsdag</th> <th> Skogen</th>
+        </tr>
+        <tr>
+            <th>Fredag</th> <th> TV</th>
+        </tr>
+    </table>
+
+    <h2>Attributet scope</h2>
+    <table>
+            <tr>
+            <th></th>
+            <th scope="col">Saturday</th>
+            <th scope="col">Sunday</th>
+            </tr>
+            <tr>
+            <th scope="row">Tickets sold:</th>
+            <td>120</td>
+            <td>135</td>
+            </tr>
+            <tr>
+            <th scope="row">Total sales:</th>
+            <td>$600</td>
+            <td>$675</td>
+            </tr>
+            </table>
+</body>
+</html>
